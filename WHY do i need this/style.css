@@ -1,0 +1,86 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --black: #000;
+  --offwhite: #f7e1db;
+  --light-brown: #8a6a55;
+  --dark-brown: #59382a;
+  --dark-red: #dc2626;
+  --gray: #252c30;
+/*Intentions*/
+
+--primary:var(--light-brown);
+--secondary:var(--dark-brown);
+
+  /*typography*/
+  --h1: 42.09px;
+  --h2: 31.57px
+  --h3: 23.69px
+  --h4: 17.77px
+  --h5: 13.33px
+  --h6: 10.00px
+}
+
+.hero {
+  background-color: var(--offwhite);
+}
+.main{
+  background-color: var(--secondary);
+  height: 600px;
+}
+.warm{
+  --primary:var(--light-red);
+  --secondary:var(--dark-red);
+}
+.cool{
+  --primary:var(--light-blue);
+  --secondary:var(--dark-blue);
+}
+h1{
+  font-size: var(--h1);
+}
+h2{
+  font-size: var(--h2);
+}
+h3{
+  font-size: var(--h3);
+}
+h4{
+  font-size: var(--h4);
+}
+h5{
+  font-size: var(--h5);
+}
+h6{
+  font-size: var(--h6);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {text-align: center;}
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10rem;
+  transition: all 0.2s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
+}
