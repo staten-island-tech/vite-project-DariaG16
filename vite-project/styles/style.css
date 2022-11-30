@@ -1,0 +1,29 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.hero {
+  background-color: var(--offwhite);
+}
+.main {
+  background-color: var(--secondary);
+  height: 600px;
+}
+.warm {
+  --primary: var(--light-red);
+  --secondary: var(--dark-red);
+}
+.cool {
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
+}
