@@ -15,7 +15,7 @@ body,
   height: 600px;
 }
 .warm {
-  --primary: var(--light-red);
+  --primary: var(--dark-red);
   --secondary: var(--dark-red);
 }
 .cool {
