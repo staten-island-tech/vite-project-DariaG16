@@ -500,3 +500,7 @@ const cookies = [
     usefulIn: ["arena", "master mode", "odyssey"],
   },
 ];
+
+let ghost = pokemons.filter((pokemons) => pokemons.type.includes("Ghost"));
+
+pokemons.forEach((pokemons) => console.log(pokemons.name.english));
