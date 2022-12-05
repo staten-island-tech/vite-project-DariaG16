@@ -5,6 +5,7 @@ const cookies = [
     name: "hollyberry cookie",
     type: "defense",
     rarity: "ancient",
+    image: "./images/hollyberry.png",
     usefulIn: ["arena", "world exploration", "master mode"],
   },
   {
@@ -501,4 +502,4 @@ const cookies = [
   },
 ];
 
-console.log(cookies);
+export { cookies };
