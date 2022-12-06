@@ -1,63 +1,66 @@
 :root {
-    --black: #000;
-    --offwhite: #F7F7FF;
-    --light-brown: #F2D0A4;
-    --dark-brown: #663F46;
-    --dark-green: #498467;
-    --light-green: #52B788;
+  --black: #000;
+  --offwhite: #f7f7ff;
+  --light-brown: #f2d0a4;
+  --dark-brown: #663f46;
+  --dark-green: #498467;
+  --light-green: #52b788;
 
-    --white: rgb(255, 255, 255);
-    --dark-blue: rgb(43, 45, 66);
-    --blue: rgb(46, 134, 171);
-    --green: rgb(172, 252, 217);
-    --pink: rgb(250, 178, 234);
-    --purple: rgb(171, 146, 191);
+  --white: rgb(255, 255, 255);
+  --dark-blue: rgb(43, 45, 66);
+  --blue: rgb(46, 134, 171);
+  --green: rgb(172, 252, 217);
+  --pink: rgb(250, 178, 234);
+  --purple: rgb(171, 146, 191);
   /*Intentions*/
-  
-  
-  
-    /*typography*/
-    --h1: 42.09px;
-    --h2: 31.57px
-    --h3: 23.69px
-    --h4: 17.77px
-    --h5: 13.33px
-    --h6: 10.00px
-  }
-  h1{
-    font-size: var(--h1);
-  }
-  h2{
-    font-size: var(--h2);
-  }
-  h3{
-    font-size: var(--h3);
-  }
-  h4{
-    font-size: var(--h4);
-  }
-  h5{
-    font-size: var(--h5);
-  }
-  h6{
-    font-size: var(--h6);
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {text-align: center;}
-  .btn,
-  .btn:link,
-  .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    margin: 1rem auto;
-    font-size: 2rem;
-    border: none;
-    border-radius: 10rem;
-    transition: all 0.2s;
-  }
+  --background: var(--dark-blue);
+  --card: var(--blue);
+  --name: var(--green);
+
+  /*typography*/
+  --h1: 42.09px;
+  --h2: 31.57px;
+  --h3: 23.69px;
+  --h4: 17.77px;
+  --h5: 13.33px;
+  --h6: 10px;
+}
+h1 {
+  font-size: var(--h1);
+}
+h2 {
+  font-size: var(--h2);
+}
+h3 {
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
+}
+h5 {
+  font-size: var(--h5);
+}
+h6 {
+  font-size: var(--h6);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10rem;
+  transition: all 0.2s;
+}
