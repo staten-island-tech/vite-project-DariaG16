@@ -27,16 +27,17 @@ body {
 .heading {
   font-family: Cookie-Run;
   margin: 70px;
-  margin-top: 300px;
+  margin-top: 30px;
   padding: 20px;
+  color: var(--green);
   text-align: center;
   background-color: var(--blue);
-  border: 3px solid var(--white);
+  border: 3px solid var(--green);
 }
 .everything {
   font-family: Cookie-Run;
   font-size: 30px;
-  color: white;
+  color: var(--green);
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -47,10 +48,10 @@ body {
 
 .Category {
   background-color: var(--blue);
-  border: 4px solid rgb(78, 49, 133);
-  border-radius: 20%;
+  border: 4px solid var(--green);
   width: 20%;
-  height: 400px;
+  height: 450px;
+  margin: 30px;
   margin-top: 10px;
   box-shadow: 10px 5px 5px rgb(38, 0, 56);
   -webkit-transition: all 0.3s;
