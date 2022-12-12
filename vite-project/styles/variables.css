@@ -8,6 +8,7 @@
 
   --white: rgb(255, 255, 255);
   --dark-blue: rgb(43, 45, 66);
+  --darker-blue: rgb(6, 8, 34);
   --blue: rgb(46, 134, 171);
   --green: rgb(172, 252, 217);
   --pink: rgb(250, 178, 234);
@@ -16,7 +17,7 @@
   --background: var(--dark-blue);
   --card: var(--blue);
   --name: var(--green);
-
+  --dark: var(--darker-blue);
   /*typography*/
   --h1: 42.09px;
   --h2: 60.57px;

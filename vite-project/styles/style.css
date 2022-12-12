@@ -62,11 +62,35 @@ h2 {
 }
 
 .dropDown {
+  color: var(--green);
+  background-color: var(--blue);
+  border: 4px solid var(--green);
+  box-shadow: 10px 5px 5px rgb(38, 0, 56);
   text-align: center;
-  width: 230px;
+  width: 280px;
   height: 60px;
   font-size: 20px;
-  margin: 50px;
+  margin: 0px 50px 20px;
+  padding: 10px;
+}
+#lightDark {
+  background-image: url("https://freepngimg.com/save/117852-crescent-moon-png-file-hd/1500x1500");
+  background-color: var(--dark);
+  border-radius: 50%;
+  background-size: cover;
+  width: 90px;
+  height: 90px;
+  left: 60px;
+  position: fixed;
+  transition: 0.5s;
+}
+#lightDark:hover {
+  background-color: rgb(96, 89, 109);
+  width: 110px;
+  height: 110px;
+}
+.choosingCookies {
+  text-align: center;
 }
 .card {
   background-color: var(--blue);
