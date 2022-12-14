@@ -34,7 +34,7 @@ body {
   background-color: var(--blue);
   border: 3px solid var(--green);
 }
-.everything {
+#everything {
   font-family: Cookie-Run;
   font-size: 30px;
   color: var(--green);
@@ -89,7 +89,7 @@ h2 {
   width: 110px;
   height: 110px;
 }
-.choosingCookies {
+#choosingCookies {
   text-align: center;
 }
 .card {
