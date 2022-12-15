@@ -1,3 +1,4 @@
+@import url(variables.css);
 html,
 body,
 * {
@@ -6,13 +7,93 @@ body,
   box-sizing: border-box;
   font-size: 62.5%;
 }
-
-.hero {
-  background-color: var(--offwhite);
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
-.main {
-  background-color: var(--secondary);
-  height: 600px;
+/* @font-face {
+  src: url(fonts/CookieRun\ Black.ttf);
+  font-family: Cookie-Run;
+}
+ */
+body {
+  background-color: var(--dark-blue);
+}
+
+.heading {
+  font-family: Cookie-Run;
+  margin: 70px;
+  margin-top: 30px;
+  padding: 20px;
+  color: var(--green);
+  text-align: center;
+  background-color: var(--blue);
+  border: 3px solid var(--green);
+}
+#everything {
+  font-family: Cookie-Run;
+  font-size: 30px;
+  color: var(--green);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px;
+}
+
+.Category {
+  background-color: var(--blue);
+  border: 4px solid var(--green);
+  width: 20%;
+  height: 450px;
+  margin: 30px;
+  margin-top: 10px;
+  box-shadow: 10px 5px 5px rgb(38, 0, 56);
+  -webkit-transition: all 0.3s;
+}
+h2 {
+  margin-top: 15px;
+  font-size: 3rem;
+}
+
+.dropDown {
+  color: var(--green);
+  background-color: var(--blue);
+  border: 4px solid var(--green);
+  box-shadow: 10px 5px 5px rgb(38, 0, 56);
+  text-align: center;
+  width: 280px;
+  height: 60px;
+  font-size: 20px;
+  margin: 0px 50px 20px;
+  padding: 10px;
+}
+#lightDark {
+  background-image: url("https://freepngimg.com/save/117852-crescent-moon-png-file-hd/1500x1500");
+  background-color: var(--dark);
+  border-radius: 50%;
+  background-size: cover;
+  width: 90px;
+  height: 90px;
+  left: 60px;
+  position: fixed;
+  transition: 0.5s;
+}
+#lightDark:hover {
+  background-color: rgb(96, 89, 109);
+  width: 110px;
+  height: 110px;
+}
+#choosingCookies {
+  text-align: center;
+}
+.card {
+  background-color: var(--blue);
 }
 .warm {
   --primary: var(--dark-red);
@@ -21,9 +102,4 @@ body,
 .cool {
   --primary: var(--light-blue);
   --secondary: var(--dark-blue);
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
