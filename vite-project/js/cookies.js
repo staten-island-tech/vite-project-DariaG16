@@ -659,6 +659,7 @@ const cookies = [
   {
     name: "muscle cookie",
     type: "charge",
+    img: "../images/muscle.png",
     rarity: "super-ultra-extra-rare",
     usefulIn: [" beauty contest"],
   },

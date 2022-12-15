@@ -33,39 +33,39 @@ let usefulInDecor = cookies.filter((cookies) =>
 let usefulInBC = cookies.filter((cookies) =>
   cookies.usefulIn.includes(" beauty contest")
 );
-
-let common = cookies.filter((cookies) => cookies.rarity.includes(" common"));
-let rare = cookies.filter((cookies) => cookies.rarity.includes(" rare"));
-let epic = cookies.filter((cookies) => cookies.rarity.includes(" epic"));
+let common = cookies.filter((cookies) => cookies.rarity.includes("common"));
+let rare = cookies.filter((cookies) => cookies.rarity.includes("rare"));
+let epic = cookies.filter((cookies) => cookies.rarity.includes("epic"));
 let superEpic = cookies.filter((cookies) =>
-  cookies.rarity.includes(" superEpic")
+  cookies.rarity.includes("superEpic")
 );
 let legendary = cookies.filter((cookies) =>
-  cookies.rarity.includes(" legendary")
+  cookies.rarity.includes("legendary")
 );
-let ancient = cookies.filter((cookies) => cookies.rarity.includes(" ancient"));
-let special = cookies.filter((cookies) => cookies.rarity.includes(" special"));
+let ancient = cookies.filter((cookies) => cookies.rarity.includes("ancient"));
+let special = cookies.filter((cookies) => cookies.rarity.includes("special"));
 let superUltraRare = cookies.filter((cookies) =>
-  cookies.rarity.includes(" super-ultra-extra-rare")
+  cookies.rarity.includes("super-ultra-extra-rare")
 );
 
-let charge = cookies.filter((cookies) => cookies.type.includes(" charge"));
-let defense = cookies.filter((cookies) => cookies.type.includes(" defense"));
-let bomber = cookies.filter((cookies) => cookies.type.includes(" bomber"));
-let ranged = cookies.filter((cookies) => cookies.type.includes(" ranged"));
-let ambush = cookies.filter((cookies) => cookies.type.includes(" ambush"));
-let magic = cookies.filter((cookies) => cookies.type.includes(" magic"));
-let healing = cookies.filter((cookies) => cookies.type.includes(" healing"));
-let support = cookies.filter((cookies) => cookies.type.includes(" support"));
-let bts = cookies.filter((cookies) => cookies.type.includes(" bts"));
+let charge = cookies.filter((cookies) => cookies.type.includes("charge"));
+let defense = cookies.filter((cookies) => cookies.type.includes("defense"));
+let bomber = cookies.filter((cookies) => cookies.type.includes("bomber"));
+let ranged = cookies.filter((cookies) => cookies.type.includes("ranged"));
+let ambush = cookies.filter((cookies) => cookies.type.includes("ambush"));
+let magic = cookies.filter((cookies) => cookies.type.includes("magic"));
+let healing = cookies.filter((cookies) => cookies.type.includes("healing"));
+let support = cookies.filter((cookies) => cookies.type.includes("support"));
+let bts = cookies.filter((cookies) => cookies.type.includes("bts"));
 
-usefulInArena.forEach((cookies) =>
+usefulInBC.forEach((cookies) =>
   DOMselectors.everything.insertAdjacentHTML(
     "beforeend",
     `<div class="Category">
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
+      <img src="${cookies.image}" alt="${cookies.name}">
       <h2>${cookies.name}</h2>
       </div>`
   )
