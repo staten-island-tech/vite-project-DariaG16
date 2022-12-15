@@ -1,14 +1,20 @@
 :root {
     --black: #000;
-    --offwhite: #f7e1db;
-    --light-brown: #8a6a55;
-    --dark-brown: #59382a;
-    --dark-red: #dc2626;
-    --gray: #252c30;
+    --offwhite: #F7F7FF;
+    --light-brown: #F2D0A4;
+    --dark-brown: #663F46;
+    --dark-green: #498467;
+    --light-green: #52B788;
+
+    --white: rgb(255, 255, 255);
+    --dark-blue: rgb(43, 45, 66);
+    --blue: rgb(46, 134, 171);
+    --green: rgb(172, 252, 217);
+    --pink: rgb(250, 178, 234);
+    --purple: rgb(171, 146, 191);
   /*Intentions*/
   
-  --primary:var(--light-brown);
-  --secondary:var(--dark-brown);
+  
   
     /*typography*/
     --h1: 42.09px;
