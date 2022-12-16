@@ -46,6 +46,10 @@ body {
   margin: 15px;
 }
 
+.images {
+  height: 280px;
+}
+
 .Category {
   background-color: var(--blue);
   border: 4px solid var(--green);

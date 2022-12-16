@@ -58,14 +58,14 @@ let healing = cookies.filter((cookies) => cookies.type.includes("healing"));
 let support = cookies.filter((cookies) => cookies.type.includes("support"));
 let bts = cookies.filter((cookies) => cookies.type.includes("bts"));
 
-usefulInBC.forEach((cookies) =>
+ancient.forEach((cookies) =>
   DOMselectors.everything.insertAdjacentHTML(
     "beforeend",
     `<div class="Category">
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img src="${cookies.image}" alt="${cookies.name}">
+      <img class="images" src="${cookies.img}" alt="${cookies.name}">
       <h2>${cookies.name}</h2>
       </div>`
   )
