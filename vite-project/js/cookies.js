@@ -116,6 +116,7 @@ const cookies = [
     name: "vampire cookie",
     type: "ambush",
     rarity: "epic",
+    img: "./public/vampire.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -128,18 +129,21 @@ const cookies = [
     name: "sorbet shark cookie",
     type: "ambush",
     rarity: "epic",
+    img: "./public/sorbet_shark.png",
     usefulIn: [" world exploration", " arena", " master mode"],
   },
   {
     name: "mala sauce cookie",
     type: "charge",
     rarity: "epic",
+    img: "./public/mala_sauce.png",
     usefulIn: [" arena", " world exploration"],
   },
   {
     name: "cream puff cookie",
     type: "support",
     rarity: "epic",
+    img: "./public/cream_puff.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -152,6 +156,7 @@ const cookies = [
     name: "eclair cookie",
     type: "support",
     rarity: "epic",
+    img: "./public/eclair.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -164,6 +169,7 @@ const cookies = [
     name: "caramel arrow cookie",
     type: "ranged",
     rarity: "epic",
+    img: "./public/caramel_arrow.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -176,6 +182,7 @@ const cookies = [
     name: "twizzly gummy cookie",
     type: "ranged",
     rarity: "epic",
+    img: "./public/twizzly_gummy.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -188,6 +195,7 @@ const cookies = [
     name: "purple yam cookie",
     type: "charge",
     rarity: "epic",
+    img: "./public/purple_yam.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -200,6 +208,7 @@ const cookies = [
     name: "wildberry cookie",
     type: "defense",
     rarity: "epic",
+    img: "./public/wildberry.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -212,6 +221,7 @@ const cookies = [
     name: "cotton cookie",
     type: "support",
     rarity: "epic",
+    img: "./public/cotton.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -224,6 +234,7 @@ const cookies = [
     name: "financier cookie",
     type: "defense",
     rarity: "epic",
+    img: "./public/financier.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -236,12 +247,14 @@ const cookies = [
     name: "chili pepper cookie",
     type: "ambush",
     rarity: "epic",
+    img: "./public/chili_pepper.png",
     usefulIn: [" world exploration", " arena"],
   },
   {
     name: "espresso cookie",
     type: "magic",
     rarity: "epic",
+    img: "./public/espresso.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -254,6 +267,7 @@ const cookies = [
     name: "affogato cookie",
     type: "bomber",
     rarity: "epic",
+    img: "./public/affogato.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -266,6 +280,7 @@ const cookies = [
     name: "pumpkin pie cookie",
     type: "magic",
     rarity: "epic",
+    img: "./public/pumpkin_pie.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -278,6 +293,7 @@ const cookies = [
     name: "crunchy chip cookie",
     type: "charge",
     rarity: "epic",
+    img: "./public/crunchy_chip.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -290,6 +306,7 @@ const cookies = [
     name: "cream unicorn cookie",
     type: "healer",
     rarity: "epic",
+    img: "./public/cream_unicorn.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -302,6 +319,7 @@ const cookies = [
     name: "pomegranate cookie",
     type: "support",
     rarity: "epic",
+    img: "./public/pomegranate.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -314,6 +332,7 @@ const cookies = [
     name: "dark choco cookie",
     type: "charge",
     rarity: "epic",
+    img: "./public/dark_choco.png",
     usefulIn: [
       " arena",
       " world exploration",
@@ -326,12 +345,14 @@ const cookies = [
     name: "cherry blossom cookie",
     type: "ambush",
     rarity: "epic",
+    img: "./public/cherry_blossom.png",
     usefulIn: [" guild battle", " tosc", " arena"],
   },
   {
     name: "licorice cookie",
     type: "magic",
     rarity: "epic",
+    img: "./public/licorice.png",
     usefulIn: [
       " arena",
       " world exploration",

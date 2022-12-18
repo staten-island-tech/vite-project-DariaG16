@@ -8,6 +8,9 @@ const DOMselectors = {
   dropDown: document.querySelector(`dropDown`),
   lightDark: document.querySelector(`#lightDark`),
   card: document.querySelector(`card`),
+  raritybtn: document.querySelector(`#raritybtn`),
+  typebtn: document.querySelector(`#typebtn`),
+  usefulInBtn: document.querySelector(`#usefulInBtn`),
 };
 let usefulInArena = cookies.filter((cookies) =>
   cookies.usefulIn.includes(" arena")
@@ -58,7 +61,80 @@ let healing = cookies.filter((cookies) => cookies.type.includes("healing"));
 let support = cookies.filter((cookies) => cookies.type.includes("support"));
 let bts = cookies.filter((cookies) => cookies.type.includes("bts"));
 
-ancient.forEach((cookies) =>
+let temp1 = 0;
+const rarities = [
+  "Click here!",
+  "Common",
+  "Rare",
+  "Epic",
+  "Super-Epic",
+  "Legendary",
+  "Ancient",
+  "Special",
+  "Super-Ultra-Rare",
+];
+DOMselectors.raritybtn.addEventListener("click", function () {
+  temp1++;
+  DOMselectors.raritybtn.innerHTML = rarities[temp1];
+  if (temp1 > 7) {
+    temp1 = 0;
+  }
+});
+
+let temp3 = 0;
+const usefulIn = [
+  "Click here!",
+  "Arena",
+  "World-Exploration",
+  "Master-Mode",
+  "Odyssey",
+  "Tower-Of-Sweet-Chaos",
+  "Guild-Battle",
+  "Decor",
+  "Beauty-Contest",
+  "All",
+];
+DOMselectors.usefulInBtn.addEventListener("click", function () {
+  temp3++;
+  DOMselectors.usefulInBtn.innerHTML = usefulIn[temp3];
+  if (temp3 > 8) {
+    temp3 = 0;
+  }
+});
+
+let temp2 = 0;
+const type = [
+  "Click here!",
+  "Charge",
+  "Defense",
+  "Bomber",
+  "Ranged",
+  "Ambush",
+  "Magic",
+  "Healing",
+  "Support",
+  "BTS",
+];
+DOMselectors.typebtn.addEventListener("click", function () {
+  temp2++;
+  DOMselectors.typebtn.innerHTML = type[temp2];
+  if (temp2 > 8) {
+    temp2 = 0;
+  }
+});
+/* epic.forEach((cookies) =>
+  DOMselectors.everything.insertAdjacentHTML(
+    "beforeend",
+    `<div class="Category">
+      <h3>Type: ${cookies.type}</h3>
+      <h3>Rarity: ${cookies.rarity}</h3>
+      <h3>Useful In: ${cookies.usefulIn}</h3>
+      <img class="images" src="${cookies.img}" alt="${cookies.name}">
+      <h2>${cookies.name}</h2>
+      </div>`
+  )
+); */
+cookies.forEach((cookies) =>
   DOMselectors.everything.insertAdjacentHTML(
     "beforeend",
     `<div class="Category">
@@ -70,7 +146,6 @@ ancient.forEach((cookies) =>
       </div>`
   )
 );
-
 /* const sorting = {
   getAllProducts: null,
   getCookies: function () {
