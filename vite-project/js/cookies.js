@@ -5,7 +5,7 @@ const cookies = [
     name: "hollyberry cookie",
     type: "defense",
     rarity: "ancient",
-    image: "/hollyberry.png",
+    img: "/hollyberry.png",
     usefulIn: [" arena", " world exploration", " master mode"],
   },
   {
@@ -495,7 +495,7 @@ const cookies = [
     name: "snow sugar cookie",
     type: "magic",
     rarity: "epic",
-    img: "/show_sugar.png",
+    img: "/snow_sugar.png",
     usefulIn: [" arena", " world exploration", " guild battle"],
   },
   {
@@ -564,7 +564,7 @@ const cookies = [
     name: "schwarzwalder",
     type: "charge",
     rarity: "epic",
-    img: "/schwarzwalder.png",
+    img: "/schwarzwalder.webp",
     usefulIn: [
       " arena",
       " world exploration",
