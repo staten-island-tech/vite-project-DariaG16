@@ -80,7 +80,7 @@ DOMselectors.raritybtn.addEventListener("click", function () {
     common.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category" class="commonCard">
+        `<div class="Category">
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -90,7 +90,7 @@ DOMselectors.raritybtn.addEventListener("click", function () {
       )
     );
   }
-  let commonCard = document.querySelector(`.commonCard`);
+  let commonCard = document.querySelector(".Category");
   if (temp1 == 2) {
     commonCard.remove();
     rare.forEach((cookies) =>
