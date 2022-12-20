@@ -80,7 +80,7 @@ DOMselectors.raritybtn.addEventListener("click", function () {
     common.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category" id="commonCard">
+        `<div class="Category" class="commonCard">
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -90,7 +90,7 @@ DOMselectors.raritybtn.addEventListener("click", function () {
       )
     );
   }
-  let commonCard = document.querySelector(`#commonCard`);
+  let commonCard = document.querySelector(`.commonCard`);
   if (temp1 == 2) {
     commonCard.remove();
     rare.forEach((cookies) =>
@@ -106,87 +106,7 @@ DOMselectors.raritybtn.addEventListener("click", function () {
       )
     );
   }
-  let rareCard = document.querySelector(`#rareCard`);
-  if (temp1 == 3) {
-    rareCard.remove();
-    epic.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category" id="epicCard">
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  let epicCard = document.querySelector(`#epicCard`);
-  if (temp1 == 4) {
-    epicCard.remove();
-    superEpic.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category" id="superECard">
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  let superECard = document.querySelector(`#superECard`);
-  if (temp1 == 5) {
-    superECard.remove();
-    legendary.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category" id="legendaryCard">
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  let legendary = document.querySelector(`#legendaryCard`);
-  if (temp1 == 6) {
-    legendary.remove();
-    ancient.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category" id="ancientCard">
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  let ancient = document.querySelector(`#ancientCard`);
-  if (temp1 == 7) {
-    ancient.remove();
-    special.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category" id="specialCard">
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-    let Category = document.querySelector(`#ancientCard`);
-  }
+
   if (temp1 > 7) {
     temp1 = 0;
   }
