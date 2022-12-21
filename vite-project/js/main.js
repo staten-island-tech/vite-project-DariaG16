@@ -90,9 +90,9 @@ DOMselectors.raritybtn.addEventListener("click", function () {
       )
     );
   }
-  let commonCard = document.querySelector(".Category");
+  const commonCard = document.querySelectorAll(".Category");
   if (temp1 == 2) {
-    commonCard.remove();
+    removeCard();
     rare.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
@@ -153,6 +153,13 @@ DOMselectors.typebtn.addEventListener("click", function () {
   }
 });
 
+function removeCard() {
+  const cards = document.querySelectorAll(".Category");
+  const cardsArray = Array.from(cards);
+  cardsArray.forEach((cards) => {
+    cards.remove();
+  });
+}
 /* cookies.forEach((cookies) =>
   DOMselectors.everything.insertAdjacentHTML(
     "beforeend",
