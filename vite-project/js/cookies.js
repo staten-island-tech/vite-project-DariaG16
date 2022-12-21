@@ -76,7 +76,7 @@ const cookies = [
   {
     name: "sherbet cookie",
     type: "ranged",
-    rarity: "super epic",
+    rarity: "SEpic",
     img: "/sherbet.png",
     usefulIn: [
       " arena",
@@ -89,7 +89,7 @@ const cookies = [
   {
     name: "clotted cream cookie",
     type: "magic",
-    rarity: "super epic",
+    rarity: "SEpic",
     img: "/clotted_cream.png",
     usefulIn: [
       " arena",
@@ -102,7 +102,7 @@ const cookies = [
   {
     name: "oyster cookie",
     type: "support",
-    rarity: "super epic",
+    rarity: "SEpic",
     img: "/oyster.png",
     usefulIn: [
       " arena",
@@ -726,7 +726,7 @@ const cookies = [
   },
   {
     name: "custard cookie iii",
-    type: "healing",
+    type: "healer",
     rarity: "rare",
     img: "/custard_iii.png",
     usefulIn: [" arena", " world exploration", " odyssey", " tosc"],
@@ -735,7 +735,7 @@ const cookies = [
     name: "muscle cookie",
     type: "charge",
     img: "/muscle.png",
-    rarity: "super-ultra-extra-rare",
+    rarity: "common",
     usefulIn: [" beauty contest"],
   },
   {
