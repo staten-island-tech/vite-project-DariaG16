@@ -21,7 +21,7 @@ body,
 }
  */
 body {
-  background-color: var(--dark-blue);
+  background-color: var(--background);
 }
 
 .heading {
@@ -50,16 +50,14 @@ body {
   height: 280px;
 }
 
-.Category,
-.Category2,
-.Category3 {
+.Category {
   background-color: var(--blue);
-  border: 4px solid var(--green);
+  border: 4px solid var(--details);
   width: 20%;
   height: 450px;
   margin: 30px;
   margin-top: 10px;
-  box-shadow: 10px 5px 5px rgb(38, 0, 56);
+  box-shadow: 10px 5px 5px var(--darker-blue);
   -webkit-transition: all 0.3s;
 }
 h2 {
@@ -68,10 +66,10 @@ h2 {
 }
 
 .dropDown {
-  color: var(--green);
-  background-color: var(--blue);
-  border: 4px solid var(--green);
-  box-shadow: 10px 5px 5px rgb(38, 0, 56);
+  color: var(--details);
+  background-color: var(--card);
+  border: 4px solid var(--details);
+  box-shadow: 10px 5px 5px var(--dark);
   text-align: center;
   width: 280px;
   height: 60px;
@@ -92,20 +90,27 @@ h2 {
 }
 #lightDark:hover {
   background-color: rgb(96, 89, 109);
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
 }
 #choosingCookies {
   text-align: center;
 }
 .card {
-  background-color: var(--blue);
+  background-color: var(--card);
 }
 .warm {
-  --primary: var(--dark-red);
-  --secondary: var(--dark-red);
+  background-color: var(--dark-brown);
+}
+.warmCards {
+  box-shadow: 10px 5px 5px var(--darker-brown);
+  color: var(--dark-brown);
+  background-color: var(--light-brown);
+  border: 4px solid var(--dark-green);
 }
 .cool {
-  --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
+  box-shadow: 10px 5px 5px var(--darker-blue);
+  color: var(--details);
+  background-color: var(--card);
+  border: 4px solid var(--details);
 }
