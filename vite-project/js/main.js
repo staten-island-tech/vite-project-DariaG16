@@ -4,10 +4,10 @@ console.log(cookies);
 
 const DOMselectors = {
   everything: document.querySelector(`#everything`),
+  top: document.querySelector(`#top`),
   choosingCookies: document.querySelector(`#choosingCookies`),
-  dropDown: document.querySelector(`dropDown`),
+  dropDown: document.querySelector(".dropDown"),
   lightDark: document.querySelector(`#lightDark`),
-  card: document.querySelector(`card`),
   raritybtn: document.querySelector(`#raritybtn`),
   typebtn: document.querySelector(`#typebtn`),
   usefulInBtn: document.querySelector(`#usefulInBtn`),
@@ -75,7 +75,7 @@ DOMselectors.raritybtn.addEventListener("click", function () {
     common.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -90,7 +90,7 @@ DOMselectors.raritybtn.addEventListener("click", function () {
     rare.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -105,7 +105,7 @@ DOMselectors.raritybtn.addEventListener("click", function () {
     epic.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -120,7 +120,7 @@ DOMselectors.raritybtn.addEventListener("click", function () {
     superEpic.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -135,7 +135,7 @@ DOMselectors.raritybtn.addEventListener("click", function () {
     legendary.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -150,7 +150,7 @@ DOMselectors.raritybtn.addEventListener("click", function () {
     ancient.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -165,7 +165,7 @@ DOMselectors.raritybtn.addEventListener("click", function () {
     special.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -201,7 +201,7 @@ DOMselectors.usefulInBtn.addEventListener("click", function () {
     usefulInArena.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -216,7 +216,7 @@ DOMselectors.usefulInBtn.addEventListener("click", function () {
     usefulInWE.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -231,7 +231,7 @@ DOMselectors.usefulInBtn.addEventListener("click", function () {
     usefulInOdyssey.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -246,7 +246,7 @@ DOMselectors.usefulInBtn.addEventListener("click", function () {
     usefulInTOSC.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -261,7 +261,7 @@ DOMselectors.usefulInBtn.addEventListener("click", function () {
     usefulInGuild.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -276,7 +276,7 @@ DOMselectors.usefulInBtn.addEventListener("click", function () {
     usefulInDecor.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -291,7 +291,7 @@ DOMselectors.usefulInBtn.addEventListener("click", function () {
     usefulInBC.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -306,7 +306,7 @@ DOMselectors.usefulInBtn.addEventListener("click", function () {
     usefulInMM.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -342,7 +342,7 @@ DOMselectors.typebtn.addEventListener("click", function () {
     charge.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -357,7 +357,7 @@ DOMselectors.typebtn.addEventListener("click", function () {
     defense.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -372,7 +372,7 @@ DOMselectors.typebtn.addEventListener("click", function () {
     bomber.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -387,7 +387,7 @@ DOMselectors.typebtn.addEventListener("click", function () {
     ranged.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -402,7 +402,7 @@ DOMselectors.typebtn.addEventListener("click", function () {
     ambush.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -417,7 +417,7 @@ DOMselectors.typebtn.addEventListener("click", function () {
     magic.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -432,7 +432,7 @@ DOMselectors.typebtn.addEventListener("click", function () {
     healing.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -447,7 +447,7 @@ DOMselectors.typebtn.addEventListener("click", function () {
     support.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
-        `<div class="Category">
+        `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
@@ -470,16 +470,22 @@ function removeCard() {
     cards.remove();
   });
 }
-
+const Category = document.querySelector(".Category");
 document.querySelector("#lightDark").addEventListener("click", function () {
   document.body.classList.add("warm");
-  document.Category.classList.add("warm");
-  DOMselectors.everything.classList.add("warm");
+  DOMselectors.raritybtn.classList.add("warmCards");
+  DOMselectors.raritybtn.classList.remove("coolCards");
+  DOMselectors.usefulInBtn.classList.add("warmCards");
+  DOMselectors.usefulInBtn.classList.remove("coolCards");
+  DOMselectors.typebtn.classList.add("warmCards");
+  DOMselectors.typebtn.classList.remove("coolCards");
+  DOMselectors.top.classList.add("warmCards");
+  DOMselectors.top.classList.remove("coolCards");
 });
 /* cookies.forEach((cookies) =>
   DOMselectors.everything.insertAdjacentHTML(
     "beforeend",
-    `<div class="Category">
+    `<div class="Category coolCards" >
       <h3>Type: ${cookies.type}</h3>
       <h3>Rarity: ${cookies.rarity}</h3>
       <h3>Useful In: ${cookies.usefulIn}</h3>
