@@ -68,20 +68,20 @@ h2 {
   padding: 10px;
 }
 #lightDark {
-  background-image: url("https://freepngimg.com/save/117852-crescent-moon-png-file-hd/1500x1500");
+  background-image: url("https://4bp.blogspot.com/-a1FOjrf3XOs/TxS6qK-rfXI/AAAAAAAAAHc/6wtQKHXEPBU/s1600/11-27-11 + 4-suns-k + AM + 011jpg");
   background-color: var(--dark);
   border-radius: 50%;
   background-size: cover;
-  width: 90px;
-  height: 90px;
+  width: 200px;
+  height: 200px;
   left: 60px;
   position: fixed;
   transition: 0.5s;
 }
 #lightDark:hover {
   background-color: rgb(96, 89, 109);
-  width: 100px;
-  height: 100px;
+  width: 205px;
+  height: 205px;
 }
 #choosingCookies {
   text-align: center;
