@@ -54,7 +54,6 @@ let ambush = cookies.filter((cookies) => cookies.type.includes("ambush"));
 let magic = cookies.filter((cookies) => cookies.type.includes("magic"));
 let healing = cookies.filter((cookies) => cookies.type.includes("healer"));
 let support = cookies.filter((cookies) => cookies.type.includes("support"));
-let bts = cookies.filter((cookies) => cookies.type.includes("bts"));
 
 let temp1 = 0;
 const rarities = [
@@ -68,10 +67,25 @@ const rarities = [
   "Special",
   "Click here!",
 ];
+if (temp1 == 0) {
+  cookies.forEach((cookies) =>
+    DOMselectors.everything.insertAdjacentHTML(
+      "beforeend",
+      `<div class="Category coolCards" >
+      <h3>Type: ${cookies.type}</h3>
+      <h3>Rarity: ${cookies.rarity}</h3>
+      <h3>Useful In: ${cookies.usefulIn}</h3>
+      <img class="images" src="${cookies.img}" alt="${cookies.name}">
+      <h2>${cookies.name}</h2>
+      </div>`
+    )
+  );
+}
 DOMselectors.raritybtn.addEventListener("click", function () {
   temp1++;
   DOMselectors.raritybtn.innerHTML = rarities[temp1];
   if (temp1 == 1) {
+    removeCard();
     common.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
@@ -198,6 +212,7 @@ DOMselectors.usefulInBtn.addEventListener("click", function () {
   temp3++;
   DOMselectors.usefulInBtn.innerHTML = usefulIn[temp3];
   if (temp3 == 1) {
+    removeCard();
     usefulInArena.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
@@ -339,6 +354,7 @@ DOMselectors.typebtn.addEventListener("click", function () {
   temp2++;
   DOMselectors.typebtn.innerHTML = type[temp2];
   if (temp2 == 1) {
+    removeCard();
     charge.forEach((cookies) =>
       DOMselectors.everything.insertAdjacentHTML(
         "beforeend",
@@ -470,28 +486,33 @@ function removeCard() {
     cards.remove();
   });
 }
-const Category = document.querySelector(".Category");
+
 document.querySelector("#lightDark").addEventListener("click", function () {
-<<<<<<< Updated upstream
-  document.body.classList.add("warm");
-  DOMselectors.raritybtn.classList.add("warmCards");
-  DOMselectors.raritybtn.classList.remove("coolCards");
-  DOMselectors.usefulInBtn.classList.add("warmCards");
-  DOMselectors.usefulInBtn.classList.remove("coolCards");
-  DOMselectors.typebtn.classList.add("warmCards");
-  DOMselectors.typebtn.classList.remove("coolCards");
-  DOMselectors.top.classList.add("warmCards");
-  DOMselectors.top.classList.remove("coolCards");
-=======
+  const Category = document.querySelectorAll(".Category");
   if (document.body.classList.contains("cool")) {
+    DOMselectors.raritybtn.classList.add("warmCards");
+    DOMselectors.raritybtn.classList.remove("coolCards");
+    DOMselectors.usefulInBtn.classList.add("warmCards");
+    DOMselectors.usefulInBtn.classList.remove("coolCards");
+    DOMselectors.typebtn.classList.add("warmCards");
+    DOMselectors.typebtn.classList.remove("coolCards");
+    DOMselectors.top.classList.add("warmCards");
+    DOMselectors.top.classList.remove("coolCards");
     document.body.classList.add("warm");
     document.body.classList.remove("cool");
   } else {
+    DOMselectors.raritybtn.classList.add("coolCards");
+    DOMselectors.raritybtn.classList.remove("warmCards");
+    DOMselectors.usefulInBtn.classList.add("coolCards");
+    DOMselectors.usefulInBtn.classList.remove("warmCards");
+    DOMselectors.typebtn.classList.add("coolCards");
+    DOMselectors.typebtn.classList.remove("warmCards");
+    DOMselectors.top.classList.add("coolCards");
+    DOMselectors.top.classList.remove("warmCards");
     document.body.classList.add("cool");
     document.body.classList.remove("warm");
   }
   document.querySelectorAll(".Category").classList.add("warmCards");
->>>>>>> Stashed changes
 });
 /* cookies.forEach((cookies) =>
   DOMselectors.everything.insertAdjacentHTML(

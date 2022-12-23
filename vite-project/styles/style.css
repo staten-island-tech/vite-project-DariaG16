@@ -68,11 +68,7 @@ h2 {
   padding: 10px;
 }
 #lightDark {
-<<<<<<< Updated upstream
-  background-image: url("https://4bp.blogspot.com/-a1FOjrf3XOs/TxS6qK-rfXI/AAAAAAAAAHc/6wtQKHXEPBU/s1600/11-27-11 + 4-suns-k + AM + 011jpg");
-=======
   background-image: url("https://4.bp.blogspot.com/-a1FOjrf3XOs/TxS6qK-rfXI/AAAAAAAAAHc/6wtQKHXEPBU/s1600/11-27-11+4-suns-k+AM+011.jpg");
->>>>>>> Stashed changes
   background-color: var(--dark);
   border-radius: 50%;
   background-size: cover;
@@ -102,12 +98,9 @@ h2 {
   background-color: var(--light-brown);
   border: 4px solid var(--dark-green);
 }
-<<<<<<< Updated upstream
-=======
 .cool {
   background-color: var(--background);
 }
->>>>>>> Stashed changes
 .coolCards {
   box-shadow: 10px 5px 5px var(--darker-blue);
   color: var(--details);

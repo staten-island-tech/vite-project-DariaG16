@@ -631,7 +631,15 @@ const cookies = [
     type: "bts",
     rarity: "special",
     img: "/bts.png",
-    usefulIn: [" arena", " world exploration", " tosc", "all"],
+    usefulIn: [
+      " arena",
+      " world exploration",
+      " tosc",
+      "odyssey",
+      "guild battle",
+      "decor",
+      "master mode",
+    ],
   },
   {
     name: "tails cookie",
