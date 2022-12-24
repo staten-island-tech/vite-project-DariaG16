@@ -488,7 +488,8 @@ function removeCard() {
 }
 
 document.querySelector("#lightDark").addEventListener("click", function () {
-  const Category = document.querySelectorAll(".Category");
+  const category = document.querySelectorAll(".Category");
+  const categoryArray = Array.from(category);
   if (document.body.classList.contains("cool")) {
     DOMselectors.raritybtn.classList.add("warmCards");
     DOMselectors.raritybtn.classList.remove("coolCards");
@@ -500,6 +501,10 @@ document.querySelector("#lightDark").addEventListener("click", function () {
     DOMselectors.top.classList.remove("coolCards");
     document.body.classList.add("warm");
     document.body.classList.remove("cool");
+    categoryArray.forEach((category) => {
+      category.classList.remove("coolCards");
+      category.classList.add("warmCards");
+    });
   } else {
     DOMselectors.raritybtn.classList.add("coolCards");
     DOMselectors.raritybtn.classList.remove("warmCards");
@@ -511,8 +516,11 @@ document.querySelector("#lightDark").addEventListener("click", function () {
     DOMselectors.top.classList.remove("warmCards");
     document.body.classList.add("cool");
     document.body.classList.remove("warm");
+    categoryArray.forEach((category) => {
+      category.classList.remove("warmCards");
+      category.classList.add("coolCards");
+    });
   }
-  document.querySelectorAll(".Category").classList.add("warmCards");
 });
 /* cookies.forEach((cookies) =>
   DOMselectors.everything.insertAdjacentHTML(

@@ -635,10 +635,8 @@ const cookies = [
       " arena",
       " world exploration",
       " tosc",
-      "odyssey",
-      "guild battle",
-      "decor",
-      "master mode",
+      " odyssey",
+      " master mode",
     ],
   },
   {
