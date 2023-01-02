@@ -92,7 +92,7 @@ h2 {
 .warm {
   background-color: var(--dark-brown);
 }
-.warmCards {
+.cards {
   box-shadow: 10px 5px 5px var(--darker-brown);
   color: var(--dark-brown);
   background-color: var(--light-brown);
