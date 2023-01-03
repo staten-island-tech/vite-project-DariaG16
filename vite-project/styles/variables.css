@@ -17,6 +17,7 @@
   --card: var(--blue);
   --details: var(--green);
   --dark: var(--darker-blue);
+
   /*typography*/
   --h1: 42.09px;
   --h2: 60.57px;
@@ -50,17 +51,4 @@ h4,
 h5,
 h6 {
   text-align: center;
-}
-.btn,
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  margin: 1rem auto;
-  font-size: 2rem;
-  border: none;
-  border-radius: 10rem;
-  transition: all 0.2s;
 }

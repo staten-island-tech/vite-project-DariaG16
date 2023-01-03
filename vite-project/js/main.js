@@ -211,127 +211,23 @@ const usefulIn = [
 DOMselectors.usefulInBtn.addEventListener("click", function () {
   temp3++;
   DOMselectors.usefulInBtn.innerHTML = usefulIn[temp3];
-  if (temp3 == 1) {
-    removeCard();
-    usefulInArena.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp3 == 2) {
-    removeCard();
-    usefulInWE.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp3 == 3) {
-    removeCard();
-    usefulInOdyssey.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp3 == 4) {
-    removeCard();
-    usefulInTOSC.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp3 == 5) {
-    removeCard();
-    usefulInGuild.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp3 == 6) {
-    removeCard();
-    usefulInDecor.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp3 == 7) {
-    removeCard();
-    usefulInBC.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp3 == 8) {
-    removeCard();
-    usefulInMM.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp3 > 8) {
+  if (temp2 == 1) {
+    makeCards2(usefulInArena);
+  } else if (temp2 == 2) {
+    makeCards2(usefulInWE);
+  } else if (temp2 == 3) {
+    makeCards2(usefulInOdyssey);
+  } else if (temp2 == 4) {
+    makeCards2(usefulInTOSC);
+  } else if (temp2 == 5) {
+    makeCards2(usefulInGuild);
+  } else if (temp2 == 6) {
+    makeCards2(usefulInDecor);
+  } else if (temp2 == 7) {
+    makeCards2(usefulInBC);
+  } else if (temp2 == 8) {
+    makeCards2(usefulInMM);
+  } else if (temp3 > 8) {
     removeCard();
     temp3 = 0;
   }
@@ -354,126 +250,22 @@ DOMselectors.typebtn.addEventListener("click", function () {
   temp2++;
   DOMselectors.typebtn.innerHTML = type[temp2];
   if (temp2 == 1) {
-    removeCard();
-    charge.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp2 == 2) {
-    removeCard();
-    defense.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp2 == 3) {
-    removeCard();
-    bomber.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp2 == 4) {
-    removeCard();
-    ranged.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp2 == 5) {
-    removeCard();
-    ambush.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp2 == 6) {
-    removeCard();
-    magic.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp2 == 7) {
-    removeCard();
-    healing.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp2 == 8) {
-    removeCard();
-    support.forEach((cookies) =>
-      DOMselectors.everything.insertAdjacentHTML(
-        "beforeend",
-        `<div class="Category cards" >
-      <h3>Type: ${cookies.type}</h3>
-      <h3>Rarity: ${cookies.rarity}</h3>
-      <h3>Useful In: ${cookies.usefulIn}</h3>
-      <img class="images" src="${cookies.img}" alt="${cookies.name}">
-      <h2>${cookies.name}</h2>
-      </div>`
-      )
-    );
-  }
-  if (temp2 == 9) {
+    makeCards(charge);
+  } else if (temp2 == 2) {
+    makeCards(defense);
+  } else if (temp2 == 3) {
+    makeCards(bomber);
+  } else if (temp2 == 4) {
+    makeCards(ranged);
+  } else if (temp2 == 5) {
+    makeCards(ambush);
+  } else if (temp2 == 6) {
+    makeCards(magic);
+  } else if (temp2 == 7) {
+    makeCards(healing);
+  } else if (temp2 == 8) {
+    makeCards(support);
+  } else if (temp2 == 9) {
     removeCard();
     temp2 = 0;
   }
@@ -510,6 +302,37 @@ document
       document.body.classList.remove("cool");
     }
   });
+
+function makeCards(type) {
+  removeCard();
+  type.forEach((cookies) =>
+    DOMselectors.everything.insertAdjacentHTML(
+      "beforeend",
+      `<div class="Category cards" >
+    <h3>Type: ${cookies.type}</h3>
+    <h3>Rarity: ${cookies.rarity}</h3>
+    <h3>Useful In: ${cookies.usefulIn}</h3>
+    <img class="images" src="${cookies.img}" alt="${cookies.name}">
+    <h2>${cookies.name}</h2>
+    </div>`
+    )
+  );
+}
+function makeCards2(usefulIn) {
+  removeCard();
+  usefulIn.forEach((cookies) =>
+    DOMselectors.everything.insertAdjacentHTML(
+      "beforeend",
+      `<div class="Category cards" >
+    <h3>Type: ${cookies.type}</h3>
+    <h3>Rarity: ${cookies.rarity}</h3>
+    <h3>Useful In: ${cookies.usefulIn}</h3>
+    <img class="images" src="${cookies.img}" alt="${cookies.name}">
+    <h2>${cookies.name}</h2>
+    </div>`
+    )
+  );
+}
 
 /* cookies.forEach((cookies) =>
   DOMselectors.everything.insertAdjacentHTML(
